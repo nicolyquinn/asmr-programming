@@ -1,0 +1,238 @@
+:root {
+  --color-one: #1c0b2b;
+  --color-two: #301c41;
+  --color-three: #413b6b;
+  --color-four: #5c65c0;
+  --color-five: #6f95ff;
+}
+
+body {
+  padding: 20px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #d9afd9;
+  color: var(--color-two);
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+    0deg,
+    var(--color-two) 0%,
+    var(--color-five) 100%
+  );
+}
+
+.card {
+  height: fit-content;
+  width: 370px;
+  padding: 20px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur (4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  z-index: 5;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.dotOne {
+  z-index: 6;
+  top: 80px;
+  left: 50px;
+  height: 120px;
+  width: 120px;
+  background-image: radial-gradient(
+    circle farthest-corner at 92% 71.5%,
+    var(--color-three) 0%,
+    var(--color-five) 90%
+  );
+}
+
+.dotTwo {
+  z-index: 6;
+  bottom: 100px;
+  right: 20px;
+  height: 150px;
+  width: 150px;
+  background-image: radial-gradient(
+    circle farthest-corner at 92% 71.5%,
+    var(--color-three) 0%,
+    var(--color-five) 90%
+  );
+}
+
+.dotThree {
+  z-index: 2;
+  top: 40px;
+  right: 80px;
+  height: 120px;
+  width: 120px;
+  background-image: radial-gradient(
+    circle farthest-corner at 92% 71.5%,
+    var(--color-three) 0%,
+    var(--color-five) 90%
+  );
+}
+
+.dotFour {
+  z-index: 2;
+  bottom: 100px;
+  left: 80px;
+  height: 160px;
+  width: 160px;
+  background-image: radial-gradient(
+    circle farthest-corner at 92% 71.5%,
+    var(--color-three) 0%,
+    var(--color-five) 90%
+  );
+}
+
+.alignItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userAvatar {
+  border-radius: 50%;
+}
+
+.header > p {
+  font-weight: 600;
+}
+
+.userInfo {
+  margin-top: 30px;
+  justify-content: space-evenly;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.userDetails .name {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.userDetails .job {
+  font-size: 12px;
+}
+
+.status {
+  margin-top: 50px;
+}
+
+.status > p {
+  font-size: 12px;
+}
+
+.statusItems {
+  justify-content: space-evenly;
+}
+
+.away {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-two);
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.atWork {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--color-four);
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 12px;
+  opacity: 50%;
+}
+
+.gaming {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--color-four);
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 12px;
+  opacity: 50%;
+}
+
+.dashboard {
+  margin-top: 40px;
+}
+
+.dashboard > p {
+  font-size: 12px;
+}
+
+.itemDetails {
+  gap: 10px;
+}
+
+.itemDetails > p {
+  font-weight: 600;
+}
+
+.itemImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-one);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.actionNeed {
+  background-color: var(--color-three);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.new {
+  background-color: var(--color-four);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.switch {
+  color: var(--color-two);
+  font-weight: 600;
+}
+
+.logout {
+  color: var(--color-five);
+  font-weight: 600;
+}
