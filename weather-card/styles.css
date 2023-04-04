@@ -1,0 +1,115 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.wrapper > h1 {
+  color: #000;
+}
+
+.mainCard {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 5;
+  rotate: 5deg;
+}
+
+.cardRain {
+  background: rgb(15, 13, 46);
+  background: linear-gradient(
+    45deg,
+    rgba(15, 13, 46, 1) 0%,
+    rgba(9, 9, 121, 1) 31%,
+    rgba(0, 212, 255, 1) 96%
+  );
+}
+
+.cardSun {
+  background: rgb(125, 62, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(125, 62, 0, 1) 0%,
+    rgba(194, 147, 7, 1) 44%,
+    rgba(255, 216, 0, 1) 96%
+  );
+}
+
+.cardNight {
+  background: rgb(34, 13, 46);
+  background: linear-gradient(
+    45deg,
+    rgba(34, 13, 46, 1) 0%,
+    rgba(103, 9, 121, 1) 31%,
+    rgba(182, 0, 255, 1) 96%
+  );
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-right: 20px;
+  gap: 8px;
+  rotate: -5deg;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgb(31, 38, 135);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(247, 244, 244, 0.584);
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 600;
+  opacity: 0;
+}
+
+.card:hover .card-title {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.maxTemp {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.tempText {
+  opacity: 0;
+}
+
+.card:hover .tempText {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.icon {
+  height: 85px;
+  opacity: 0.6;
+}
+
+.card:hover .icon {
+  height: 65px;
+  transition: 0.5s ease-in-out;
+}

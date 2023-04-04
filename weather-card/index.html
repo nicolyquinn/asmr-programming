@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Weather Cards</h1>
+      <div class="mainCard cardRain your-element">
+        <div class="card cardContent">
+          <span class="card-title">friday</span>
+          <img src="assets/rain.svg" class="icon" />
+          <div class="temp">
+            <span class="tempText maxTemp">27°</span>
+            <span class="tempText minTemp">26°</span>
+          </div>
+        </div>
+      </div>
+      <div class="mainCard cardNight your-element">
+        <div class="card cardContent">
+          <span class="card-title">saturday</span>
+          <img src="assets/night.svg" class="icon" />
+          <div class="temp">
+            <span class="tempText maxTemp">28°</span>
+            <span class="tempText minTemp">22°</span>
+          </div>
+        </div>
+      </div>
+      <div class="mainCard cardSun your-element">
+        <div class="card cardContent">
+          <span class="card-title">sunday</span>
+          <img src="assets/sun.svg" class="icon" />
+          <div class="temp">
+            <span class="tempText maxTemp">32°</span>
+            <span class="tempText minTemp">21°</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".your-element"), {
+      max: 25,
+      speed: 400,
+      glare: false,
+      "max-glare": 1,
+    });
+    VanillaTilt.init(document.querySelectorAll(".your-element"));
+  </script>
+</html>
